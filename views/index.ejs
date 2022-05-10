@@ -1,0 +1,12 @@
+<%- include ('menu') -%>
+
+
+<script>
+    mainContainer = document.getElementById("mainContainer");
+    pokemons = [];
+    pokemons.forEach(element => {
+        mainContainer.insertAdjacentHTML('beforeend',
+        '<div class="pokeContainer"><a class="pokeUrl" href="'+element.url+'">'+element.name.toUpperCase()+'</a></div>'
+        ) 
+    });
+</script>
